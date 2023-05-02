@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/logo.png" alt="Agenda" srcset="">
+            <h1>Agenda telefonica</h1>
+        </header>
+        <label id="aviso" for="tel">* Digite apenas numeros</label> 
+        <form id="form-agenda">
+            <input type="text" id="nome-contato" required placeholder="Contato" />
+            <input type="tel" id="numero-contato" placeholder="numero do contato"required minlength="11"/>
+            <button type="submit">Adicionar + </button>  
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Contato
+                    </th>
+                    <th>Numero </th>
+                </tr>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>---</td>
+                        <td id="Contato ">---</td>
+                    </tr>
+                </tfoot>
+            </thead>
+        </table>
+    </div>
+    <script src="./main2.js"></script>
+</body>
+</html>
